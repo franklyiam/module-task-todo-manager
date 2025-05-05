@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Assignment 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container-top">
+      <div class="section-top">
+        <h1>Module Information</h1>
+        <div>
+          <div>
+            <form>
+              <div>
+                <label>Module Code:</label>
+                <input type="text" id="modCode" />
+              </div>
+              <div>
+                <label>Module Lecturer:</label>
+                <input type="text" id="modLecturer" />
+              </div>
+              <div>
+                <input
+                  type="button"
+                  onclick="addModule()"
+                  id="moduleSubmit"
+                  value="Add"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="section-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Module Code</th>
+                  <th>Module Lecturer</th>
+                </tr>
+              </thead>
+              <tbody id="modTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-top">
+        <h1>Task</h1>
+        <div>
+          <div>
+            <form>
+              <div>
+                <label>Task Name:</label>
+                <input type="text" id="taskName" />
+              </div>
+              <div>
+                <label>Task Due Date:</label>
+                <input type="date" id="taskDate" />
+              </div>
+              <div>
+                <input
+                  type="button"
+                  id="taskSubmit"
+                  onclick="addTask()"
+                  value="Add"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="section-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Task Name</th>
+                  <th>Task Due Date</th>
+                </tr>
+              </thead>
+              <tbody id="taskTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-bottom">
+      <div class="section-bottom">
+        <h1>To do list</h1>
+        <div>
+          <div>
+            <form>
+              <div>
+                <label>Module Code:</label>
+                <select id="modSelect">
+                  <option>Modules</option>
+                </select>
+              </div>
+              <div>
+                <label>Task:</label>
+                <select id="taskSelect">
+                  <option>Tasks</option>
+                </select>
+              </div>
+              <div>
+                <label>Description:</label>
+                <input type="text" id="description" />
+              </div>
+              <div>
+                <input
+                  type="button"
+                  id="transSubmit"
+                  onclick="addToDo()"
+                  value="Add"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="section-content">
+            <table id="toDoTable">
+              <thead>
+                <tr>
+                  <th>Module Code</th>
+                  <th>Task</th>
+                  <th>Description</th>
+                  <th>Due Date</th>
+                </tr>
+              </thead>
+              <tbody class="deletable" id="todoTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

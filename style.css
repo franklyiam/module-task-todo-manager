@@ -1,0 +1,114 @@
+/* Declare CSS variables */
+:root {
+  --dark: rgb(11, 85, 85);
+  --opaque: rgb(26, 155, 155);
+  --opaquedark: rgb(0, 3, 3);
+}
+
+body {
+  font-family: Arial;
+  font-size: 16px;
+  background-image: linear-gradient(white, teal);
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+select {
+  padding: 5px 10px;
+  width: 193px;
+}
+
+input {
+  padding: 5px 10px;
+}
+
+input[type="button"] {
+  background-color: var(--dark);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+table,
+table td,
+table th {
+  padding: 5px 15px;
+  border-collapse: collapse;
+}
+
+thead,
+thead tr,
+thead th {
+  background-color: var(--opaque);
+  border-top: solid 1px var(--opaquedark);
+  border-bottom: solid 1px var(--opaquedark);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+form > div {
+  margin: 10px 0px;
+}
+
+.deletable > tr:hover {
+  background-color: lightcoral;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.container-top {
+  display: flex;
+}
+
+.section-top {
+  margin: 20px;
+  /* margin: 20px auto; */
+  padding: 15px;
+  width: 400px;
+  border: var(--dark) solid 2px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.section-bottom {
+  margin: 20px auto;
+  padding: 15px;
+  width: 800px;
+  border: var(--dark) solid 2px;
+  border-radius: 10px;
+}
+
+.section-top:hover {
+  box-shadow: 3px 3px 5px 0px var(--dark);
+  transition: 0.3s;
+}
+
+.section-bottom:hover {
+  box-shadow: 3px 3px 5px 0px var(--dark);
+  transition: 0.3s;
+}
+/* table tbody.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+} */
+
+/* Darker background-color on hover */
+#toDoTable > tr {
+  background: #ddd;
+}
