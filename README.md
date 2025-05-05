@@ -30,10 +30,6 @@ style.css        # Styling (optional)
 script.js        # All logic for module/task/todo handling
 ```
 
-## 📸 Screenshot
-
-_(Add a screenshot here if desired)_
-
 ## ✅ To Use
 
 1. Open the HTML file in your browser.
